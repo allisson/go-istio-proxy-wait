@@ -28,7 +28,9 @@ func getBool(key string, defaultValue bool) bool {
 
 // Proxy interface to perform operations with istio-proxy.
 type Proxy interface {
+	// Wait until the istio-proxy is ready.
 	Wait() error
+	// Close istio-proxy.
 	Close() error
 }
 
