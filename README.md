@@ -37,8 +37,8 @@ func main() {
 	// Execute the code.
 	fmt.Println("Hello")
 
-    // Close istio-proxy.
-    // You could also use the defer istioProxy.Close() after istioproxy.New().
+	// Close istio-proxy.
+	// You could also use the defer istioProxy.Close() after istioproxy.New().
 	if err := istioProxy.Close(); err != nil {
 		log.Fatalf("close-istio-proxy, error=%s", err.Error())
 	}
